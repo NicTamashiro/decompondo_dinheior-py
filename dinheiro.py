@@ -1,4 +1,8 @@
-valor = float(input("Digite o valor: "))
+try:
+    valor = float(input("Digite o valor: "))
+except ValueError:
+    print("Erro: nao e permitido digitar letras. Digite apenas numeros.")
+    exit()
 
 n = int(valor * 100 + 0.5)
 
